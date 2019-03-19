@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: df4aa42ba91daee43ce77739e37dc045f0c7c608eecb7332cf5c2199f5fa6d0d
+-- hash: 149a4f1de006a83e2e8bdb0ea8e5faf32c75c8ec534cf97414f745a5271e6b7f
 
 name:           servant-elm-generically
 version:        0.1.0.0
@@ -22,13 +22,17 @@ extra-source-files:
 executable servant-elm-generically
   main-is: Main.hs
   other-modules:
+      Additional
       Paths_servant_elm_generically
   hs-source-dirs:
       src
+  ghc-options: -Wall -Werror
   build-depends:
       aeson
     , base >=4.7 && <5
     , containers
+    , elm-bridge
+    , interpolatedstring-perl6
     , servant
     , servant-elm
     , servant-server
