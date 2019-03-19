@@ -1,0 +1,30 @@
+name:                servant-elm-generically
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/k-bx/servant-elm-generically#readme
+license:             BSD3
+author:              Kostiantyn Rybnikov
+maintainer:          k-bx@k-bx.com
+copyright:           2019 Kostiantyn Rybnikov
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - aeson
+  - containers
+  - servant
+  - servant-server
+  - servant-elm
+  - stm
+  - text
+  - transformers
+  - warp
+  - wai
+
+executables:
+  servant-elm-generically:
+    source-dirs:      src
+    main:             Main.hs

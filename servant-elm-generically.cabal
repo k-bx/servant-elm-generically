@@ -1,0 +1,40 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: df4aa42ba91daee43ce77739e37dc045f0c7c608eecb7332cf5c2199f5fa6d0d
+
+name:           servant-elm-generically
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/k-bx/servant-elm-generically#readme
+author:         Kostiantyn Rybnikov
+maintainer:     k-bx@k-bx.com
+copyright:      2019 Kostiantyn Rybnikov
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable servant-elm-generically
+  main-is: Main.hs
+  other-modules:
+      Paths_servant_elm_generically
+  hs-source-dirs:
+      src
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , containers
+    , servant
+    , servant-elm
+    , servant-server
+    , stm
+    , text
+    , transformers
+    , wai
+    , warp
+  default-language: Haskell2010
