@@ -2,5 +2,6 @@ resolver: lts-13.13
 packages:
 - .
 extra-deps:
-- ../servant-elm
+- git: https://github.com/k-bx/servant-elm.git
+  commit: 2ce709880b79e180444a5194f92147fb4b17d522
 - elm-bridge-0.5.0
